@@ -88,7 +88,7 @@
                     <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Why?</h3>
                     <p class="text-gray-600">
                         The reason having a unique password for every account is so important is simple: You have no way of knowing how
-                        secure your account information is being protected when it is stored by a third party. You may use a very strong
+                        securely your account information is being protected when it is stored by a third party. You may use a very strong
                         password, but if you use it on all of your accounts, then if any vendor gets compromised, ALL of your accounts
                         are compromised. Enormous lists of leaked credentials are available online for bad actors to utilize. Don't let
                         the bad security practices of the gossip forum you joined in 2003 be the reason your bank account gets drained today.
@@ -97,7 +97,10 @@
                         Good passwords are hard to guess and not used anywhere else. The best passwords are long, random text
                         strings containing upper- and lower-case letters, numbers, and special characters. More than just being
                         hard to guess, these long, random, complex passwords also take a long time to brute force, and bad actors
-                        attempting to do so are more likely to be detected in the process. As humans, we are not good at remembering
+                        attempting to do so are more likely to be detected in the process. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        As humans, we are not good at remembering
                         large quantities of random passwords. Since you should be using a unique password for every account, managing
                         this yourself will get cumbersome very quickly. Use a password manager. They're worth every penny you might
                         spend on them, and if you're a bit more techy, you can host your own for free.
@@ -159,18 +162,18 @@
                 <div class="card">
                     <h3 class="text-xl font-semibold mb-3 text-indigo-700">2. Enable Two-Factor Authentication (2FA)</h3>
                     <p class="text-gray-600">
-                        Also called Multi-Factor Authentication (MFA), especially if more than two pieces of evidence are required to log in.
-                        This provides an extra layer of security to your accounts. Even if your password is stolen, 2FA/MFA makes it significantly
-                        harder for unauthorized access. This is because in addition to your password, bad actors need something you have (a security
+                        Also called <strong>Multi-Factor Authentication (MFA)</strong>, especially if more than two pieces of evidence are required to log in.
+                        This provides an extra layer of security to your accounts. Even if your password is stolen, 2FA/MFA makes unauthorized access 
+                        significantly harder.  This is because in addition to your password, bad actors need something you have (a security
                         token, your phone, or a hardware key) or are (such as biometric data like your fingerprint or facial recognition). While
                         usually not required, most online services offer multi-factor authentication if you dig into your profile settings.
                     </p>
                     <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Example:</h3>
                     <p class="text-gray-600">
                         Any time you've entered your username and password into a website and were then prompted for a code that was emailed or sent
-                        to your registered phone number via SMS, you've used multi-factor authentication. First, you provided something you knew: the
-                        username and password required to log in. Second, you provided something you have: in this case access to your phone or email.
-                        Once both pieces of evidence were confirmed, you gained access to the service using your account. If a bad actor had the
+                        to your registered phone number via SMS, you were using multi-factor authentication. <br>First, you provided something you knew: the
+                        username and password required to log in. <br>Second, you provided something you have: in this case access to your phone or email.
+                        <br>Once both pieces of evidence were confirmed, you gained access to the service using your account. If a bad actor had the
                         password to your bank account, they wouldn't be able to log into without also having access to your email. If you're using
                         the same or a similar password for both accounts, however, then they may have access to both and can circumvent your added
                         security. Do not reuse passwords.
@@ -202,29 +205,35 @@
                         It doesn't help that the email account may also be compromised with the same credentials as from the account using MFA. Do not reuse passwords.
                     </p>
                     <p class="text-gray-600 mt-3">
-                        If possible use hardware tokens for MFA, such as YubiKey or the Google Titan Security Key. These are things you have to purchase, once, and you should probably
+                        If possible, use hardware tokens for MFA, such as a <strong>YubiKey</strong> or the <strong>Google Titan Security Key</strong>. These are things you have to purchase, once, and you should probably
                         purchase a spare. Sites and services that allow you to register hardware tokens generally let you register multiple. This means you can keep one on your keychain
-                        so it's always with you, and another located in a safe place as a backup in case something happens to the primary one. For convenience, you may wish to select
-                        hardware that allows for multiple means of connection, like USB-C for your laptop and NFC for your phone or tablet (though admittedly USB-C would probably work there, too.)
+                        so it's always with you, and another located in a safe place as a backup in case something happens to the primary one. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        For convenience, you may wish to select hardware that allows for multiple means of connection, like USB-C for your laptop and NFC for your phone or tablet (though 
+                        admittedly USB-C would probably work there, too.)
                         Unfortunately, there is a reason "sites and services that allow you to register hardware tokens" was specified. Many of the services that should be secured most,
                         such as banking, health, and government institutions, are the least likely to allow users to utilize hardware tokens. These services are likely to have email and
                         SMS MFA options alone, if at all.
                     </p>
                     <p class="text-gray-600 mt-3">
-                        The second most preferred, but far more widely available MFA option is a time-based one time password (OTP) authenticator app. The name sounds complicated, but
+                        The second most preferred, but far more widely available MFA option is a <strong>time-based one time password (OTP) authenticator app</strong>. The name sounds complicated, but
                         many options exist and registering usually just involves scanning a QR code with your phone camera from within the app and supplying the resulting (often six digit)
-                        code to finalize the setup. Once implemented, you will be prompted for a code from the authenticator application each time you log in, so you will need your phone
-                        on you to log into a site or service, even if you know your password. Most apps allow the registered OTP site configuration to be exported or backed up online in
-                        case of lost or damaged hardware.
+                        code to finalize the setup. 
                     </p>
-                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Some options include:</h3>
+                    <p class="text-gray-600 mt-3">
+                        Once implemented, you will be prompted for a code from the authenticator application each time you log in, so you will need your phone
+                        accessible to log into a site or service, even if you know your password. Most authentication apps allow the registered OTP site configuration to be exported or 
+                        backed up online in case of lost or damaged hardware.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                    <strong>Some options include:</strong>
                     <ul class="list-disc pl-5 mt-3 space-y-2">
                         <li>AuthO</li>
                         <li>Duo Mobile</li>
                         <li>Google Authenticator</li>
                         <li>Okta</li>
                     </ul>
-                    <p class="text-gray-600 mt-3">
                         If no other options exist, a basic 2FA system utilizing email or SMS is still better than no MFA on the account at all.
                     </p>
                 </div>
@@ -237,10 +246,18 @@
                     </p>
                     <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">No 💩 Sherlock, but I wouldn't have clicked it if I knew it were a scam. What should I look for?</h3>
                     <p class="text-gray-600">
-                        Fair. First, phishing scams are common in email, but may also occur via phone or text message, so you'll have to practice vigilance on all of your devices.
+                        Fair. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        First, phishing scams are common in email, but may also occur via phone or text message, so you'll have to practice vigilance on all of your devices.
+                    </p>
+                    <p class="text-gray-600 mt-3">
                         Second, don't just look at the sender of an email and assume it's real. Expand the sender details to the extent possible on your device or service.
                         Usually, there is a toggle you can use to see more information, like the actual email address of the sender, rather than the name they chose to use for their
-                        outgoing mail, as well as other information like the service that sent it. For example, you may get an email from "Chase Bank Fraud Department" with an email
+                        outgoing mail, as well as other information like the service that sent it. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        For example, you may get an email from "Chase Bank Fraud Department" with an email
                         address of "wife243@gmail.com" when you drill into the extra information. The email itself may look convincing, and you may need to look closely at the email
                         address, even when expanding the details. Some clever attackers will register domains that look similar to the ones they're mimicking in an attempt to fool you.
                         Don't click any links from goog1e.com, paypa1.com, or faceb00k.com, for example.
@@ -254,8 +271,8 @@
                         you take action, go to the actual company site and see if they mention anything out of the ordinary.
                     </p>
                     <p class="text-gray-600 mt-3">
-                        Fourth, don't open attachments from unknown senders, or if anything factors above are present. Attachments are often designed to be intriguing. Don't open the
-                        "invoice," "court summons," or "evidence," no matter how much you want to prove your innocense or see what someone else is in trouble for or has purchased.
+                        Fourth, don't open attachments from unknown senders, or if any of the factors above are present. Malicious attachments are often designed to be intriguing. Don't open the
+                        "invoice," "court summons," or "evidence," no matter how much you want to prove your innocence or see what someone else is in trouble for or has purchased.
                     </p>
                 </div>
 
@@ -265,6 +282,8 @@
                     <p class="text-gray-600">
                         Regularly update your operating system, web browser, antivirus software, and all applications to patch security vulnerabilities.
                         If you have smart devices in your home (more on that later), be sure to log into their dedicated apps in order to check for and apply firmware updates.
+                    </p>
+                    <p class="text-gray-600 mt-3">
                         Modern operating systems generally have security options available, but security is always at the cost of convenience and/or performance.
                         Be sure your antivirus software, be it native or third party, is updated daily and enabled. Do not disable features if creating exclusions is an option.
                         If you do need to disable a feature, do so temporarily. Set a reminder for yourself if there is a chance you'll forget to re-enable your security software,
@@ -278,9 +297,12 @@
                     <p class="text-gray-600">
                         Encrypt your internet connection when using public Wi-Fi networks to protect your data from eavesdropping.
                         If you travel frequently, it might be worth investing in a travel router. These can be used to connect to public or hotel wifi or wired connections
-                        and supply a different, secured network to which your devices can connect. This is also helpful in cases where your connection requires accessing
-                        or authenticating to a captive portal, as is common for public or hotel included wifi. This allows you to authenticate once using a device with a screen,
-                        then all of your other devices connected to your travel router can connect without issue.
+                        and supply a different, secured network to which your devices can connect. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        This is also helpful in cases where your connection requires accessing
+                        or authenticating to a captive portal, as is common for public or hotel included wifi. Travel routers allow you to authenticate once using a connected device with a screen,
+                        then all of your other connected devices can connect without issue.
                     </p>
                 </div>
 
@@ -290,9 +312,15 @@
                     <p class="text-gray-600">
                         Store important files on external drives or cloud services. This protects you against data loss due to cyberattacks, hardware failure, or accidents.
                         Back up data routinely, on different mediums, and in separate locations. It doesn't matter that you backed up to both your network attached storage and
-                        an external hard drive if they're both in the same burning house. If your storage solutions offer the option, restrict artifact deletion for a period of time,
+                        an external hard drive if they're both in the same burning house. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        If your storage solutions offer the option, restrict artifact deletion for a period of time,
                         starting at one week. This will temporarily use more storage, but prevents files from being overridden or deleted in ransomware or other malicious attacks.
-                        If all of your data is encrypted or deleted by a bad actor, it doesn't matter if it was stored and accessible elsewhere. Additionally, ensure your online data
+                        If all of your data is encrypted or deleted by a bad actor, it doesn't matter if it was stored and accessible elsewhere. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Additionally, ensure your online data
                         is encrypted locally before being uploaded to the storage provider, so if the service is ever compromised, attackers can't access your files. If you want to
                         backup your data online, but also don't expect to download said data very often, search for "cold storage" options among the typical vendors as this can save
                         you a significant amount of money, especially over time, which is the whole goal.
@@ -306,7 +334,10 @@
                         Periodically check and adjust privacy settings on social media, apps, and online services to control who sees your personal information.
                         If you especially trust a company and want to supply telemetry data, go for it. The company will appreciate it, although not enough to compensate you for it.
                         Otherwise, whenever possible disable public access to your account, or your private information at least, wherever possible. These settings might be updated
-                        over time and warrant annual review. Also take the time to select "necessary only" when presented with cookie settings online. Companies generally do not
+                        over time and warrant annual review. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Also take the time to select "necessary only" when presented with cookie settings online. Companies generally do not
                         need to store advertising and tracking data on your system for their sites to work, hence why those other categories are all unnecessary.
                     </p>
                 </div>
@@ -318,9 +349,13 @@
                         Change default router passwords, enable WPA3/WPA2 encryption, and consider creating guest and/or internet of things (IoT) networks.
                         Take this a step further by also changing the default password for all the smart devices in your home connecting over wifi.
                         IoT devices represent another attack surface as they regularly call home and could be conscripted by bad actors if vulnerabilities are left unpatched.
+                    </p>
+                    <p class="text-gray-600 mt-3">
                         Some of these devices may not be supported by the original vendor anymore and will never receive the security updates needed to keep them secure.
                         Having them on a separate wifi network limits the risk they pose while allowing them to provide the functionality they promised.
-                        If possible, also change the administrator username used to log onto your devices. "Admin" and "root" are common defaults, and if they can be disabled and
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Lastly, and if possible, also change the administrator username used to log onto your devices. "Admin" and "root" are common defaults, and if they can be disabled and
                         a replacement used, then attackers won't even know the username to use, much less the password.
                     </p>
                 </div>
@@ -340,9 +375,15 @@
                     <h3 class="text-xl font-semibold mb-3 text-indigo-700">10. Monitor Your Accounts</h3>
                     <p class="text-gray-600">
                         Regularly check bank statements, credit reports, and online account activity for any unusual or unauthorized transactions.
-                        This sounds simple enough, but can be expanded upon for extra security. You likely already know that there are three major credit bureaus in the United States,
+                        This sounds simple enough, but can be expanded upon for extra security. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        You likely already know that there are three major credit bureaus in the United States,
                         and you probably know that they will give you a free credit report annually. Instead of getting them all at once, set a repeating calendar reminder to generate
-                        a report from one bureau every four months, that way you don't have to wait as long between queries or pay for additional reports. It's also potentially wise
+                        a report from one bureau every four months, that way you don't have to wait as long between queries or pay for additional reports. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        It's also potentially wise
                         to place a credit freeze on yourself if you are not making any major purchases, changing living arrangements, or signing up for a new utility service. It's free
                         to place and lift freezes, and you can do either temporarily or permanently.
                     </p>
@@ -352,23 +393,28 @@
                 <div class="card">
                     <h3 class="text-xl font-semibold mb-3 text-indigo-700">Bonus Tip: Enhance Email Security with Plus Addressing</h3>
                     <p class="text-gray-600">
-                        Since you're now using a password manager (right?), you don't have to remember usernames, either.
+                        Since you're now using a password manager (right!?), you don't have to remember usernames, either.
                         This means you can implement another layer of security with something called plus addressing,
                         or subaddressing, available from most email providers.
+                    </p>
+                    <p class="text-gray-600 mt-3">
                         An option you may not know you have is to add a plus sign (+) and a tag in your email address,
                         just to the left of the @ symbol. For example, if you are signing up for Bob's newsletter,
-                        and your email address is username@example.com, you can often choose to sign up using
-                        username+bobsnews@example.com and the email will still be delivered to you like normal.
+                        and your email address is "username@example.com," you can often choose to sign up using
+                        "username+bobsnews@example.com" and the email will still be delivered to you like normal.
                     </p>
                     <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Okay, weird, but so what?</h3>
                     <p class="text-gray-600">
-                        It is useful in a number of ways. First, if you sign up for something and later start getting noticeably more spam email,
+                        Plus addressing is useful in a number of ways. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        First, if you sign up for something and later start getting noticeably more spam email,
                         you can check the email address they're sending it to in order to potentially see who leaked (sold) it.
                         If you're getting spam sent to username+bobsnews@example.com, then you'll know it was Bob's newsletter that either
                         sold your information or was potentially compromised themselves.
                     </p>
                     <p class="text-gray-600 mt-3">
-                        Second, it helps for creating filters and automations in your email. Maybe you want to send all emails sent to
+                        Second, it helps for creating filters and rules in your email. Maybe you want to send all emails sent to
                         username+newsletters@example.com to a specific folder in your inbox so you don't get phone notifications.
                         Or maybe, Bob really did leak your email and you want to sent all email to "username+bobsnews@example.com"
                         directly to the trash.
@@ -377,7 +423,9 @@
                         Lastly, since we're talking security here, bad actors are buying credentials in bulk and running their scams largely
                         with automation. If the username and password are both unique, then it certainly won't work with the bad actor tries
                         to log in to your bank's website using the "username+bobsnews@example.com" username. If someone is targeting you specifically,
-                        they'll likely catch on to the subaddressing, but most bad actors are just going after the low-hanging fruit.
+                        they'll likely catch on to the subaddressing, but most bad actors are just going after the low-hanging fruit.  It's also worth 
+                        noting that not all online services allow the plus symbol in the email address field during registration, and will block 
+                        it with input validation.
                     </p>
                 </div>
 
