@@ -355,8 +355,33 @@
                         Having them on a separate wifi network limits the risk they pose while allowing them to provide the functionality they promised.
                     </p>
                     <p class="text-gray-600 mt-3">
-                        Lastly, and if possible, also change the administrator username used to log onto your devices. "Admin" and "root" are common defaults, and if they can be disabled and
+                        Whenever possible, change the administrator username used to log onto your devices. "Admin" and "root" are common defaults, and if they can be disabled and
                         a replacement used, then attackers won't even know the username to use, much less the password.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Lastly, and this is slightly more technical, but don't use the default DNS settings you get from your Internet Service Provider (ISP).  The Domain Name System, DNS, 
+                        translates human-readable website names into IP addresses to which your browser can connect.  "Google.com" is much easier to remember than "142.250.115.139."  
+                        For most people, they will use the DNS settings automatically provided by their ISP, but this means your ISP knows every website to which you navigate, and 
+                        often compile and sell this information.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Okay, what should I use instead?</h3>
+                    <p class="text-gray-600">
+                        There are a number of alternative public domain servers you can use, the most common being hosted by Google and Cloudflare.  You can set this in your router settings, 
+                        assuming you know how to log into it and are comfortable changing network settings.
+                    <p class="text-gray-600 mt-3">
+                        <strong>Public DNS servers:</strong>
+                        <ul class="list-disc pl-5 mt-3 space-y-2">
+                            <li>Cloudflare DNS: 1.1.1.1 and 1.0.0.1</li>
+                            <li>Google DNS: 8.8.8.8 and 8.8.4.4</li>
+                            <li>OpenDNS: 208.67.222.222 and 208.67.220.220</li>
+                            <li>Quad9: 9.9.9.9</li>
+                        </ul>
+                        Any of these will work, and some even support encrypted DNS, so no one snooping can see what site's you're requesting.  You can set this at your router, so everyone 
+                        connected to your network benefits, but you can also configure DNS on your individual device so your DNS preference is honored even when you travel.   You may also 
+                        see some performance improvements, especially on public networks like in hotels or coffee shop wifi.  If you are already connecting to a VPN on public networks, it 
+                        already encrypts all your traffic, including DNS requests, so you don't need to do both in that scenario.  To take it all a step further, you can stand up your own 
+                        DNS server using low power hardware like a Raspberry Pi and software like PiHole or AdGuard.  It's out of scope for this resource, but these can help you filter ads, 
+                        block inappropriate sites, and generally help safeguard you from various browser based threats online.
                     </p>
                 </div>
 
