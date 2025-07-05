@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Site Unavailable</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(145deg, #f4f4f4, #e0e0e0);
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
+      color: #333;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.3em;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       margin-bottom: 2em;
     }
 
     .image-container {
-      width: 300px;
-      transition: transform 0.3s ease;
+      max-width: 400px;
+      transition: transform 0.3s ease-in-out;
     }
 
     .image-container:hover {
-      transform: scale(1.05) rotate(-2deg);
+      transform: scale(1.05) rotate(-1deg);
     }
 
-    svg {
+    img {
       width: 100%;
       height: auto;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
@@ -48,19 +50,7 @@
   <p>This site is currently unavailable. Please check back later.</p>
 
   <div class="image-container">
-    <!-- Cartoon under construction SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-      <rect width="256" height="256" fill="#fef6d8" />
-      <g stroke="#000" stroke-width="4" fill="none">
-        <path d="M40,200 L216,200" />
-        <rect x="90" y="150" width="20" height="50" fill="#f4a261" />
-        <rect x="150" y="150" width="20" height="50" fill="#f4a261" />
-        <polygon points="80,150 128,100 176,150" fill="#2a9d8f" />
-        <line x1="128" y1="100" x2="128" y2="60" />
-        <circle cx="128" cy="60" r="5" fill="#e76f51" />
-      </g>
-      <text x="128" y="230" text-anchor="middle" font-size="14" fill="#555">Under Construction</text>
-    </svg>
+    <img src="images/under_construction.jpg" alt="Under Construction Image" />
   </div>
 </body>
 </html>
