@@ -30,8 +30,6 @@
 
     .image-container {
       max-width: 400px;
-      /* The transform on hover is currently on the container, which is fine.
-         We'll add the fade effect to the img itself. */
       transition: transform 0.3s ease-in-out;
     }
 
@@ -44,23 +42,15 @@
       height: auto;
       border-radius: 16px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      /* Add these two lines for the fade effect */
-      opacity: 1; /* Initial state: fully visible */
-      transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
-    }
-
-    /* New CSS for the fade effect on hover */
-    img:hover {
-      opacity: 0.2; /* When hovered, fade to 20% visible (you can adjust this value) */
     }
   </style>
 </head>
 <body>
-  <h1></h1>
-  <p></p>
+  <h1>We'll Be Back Soon!</h1>
+  <p>This site is currently unavailable. Please check back later.</p>
 
   <div class="image-container">
-    <img src="/images/Ghost_SM.png" alt="Boo!" />
+    <img src="/images/under_construction.jpg" alt="Under Construction Image" />
   </div>
 </body>
 </html>
