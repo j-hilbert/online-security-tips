@@ -1,66 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ghosted</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      color: #333;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2em;
-    }
-
-    .image-container {
-      max-width: 400px;
-      /* The transform on hover is currently on the container, which is fine.
-         We'll add the fade effect to the img itself. */
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .image-container:hover {
-      transform: scale(1.05) rotate(-1deg);
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      /* Add these two lines for the fade effect */
-      opacity: 1; /* Initial state: fully visible */
-      transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
-    }
-
-    /* New CSS for the fade effect on hover */
-    img:hover {
-      opacity: 0.1; /* When hovered, fade to 10% visible (you can adjust this value) */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Your Online Security</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .header-bg {
+            background-color: #1a202c; /* Darker header background */
+            background-image: linear-gradient(to right, #1a202c, #2d3748);
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Styling for lists within cards to improve readability */
+        .card ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+        /* Ensure the strikethrough text color is visible */
+        s {
+            color: #ef4444; /* Red color for strikethrough for emphasis on caution */
+        }
+    </style>
 </head>
-<body>
-  <h1></h1>
-  <p></p>
+<body class="antialiased text-gray-800">
+    <!-- Header Section -->
+    <header class="header-bg py-12 px-4 sm:px-6 lg:px-8 text-white rounded-b-3xl">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                Strengthen Your <span class="text-gradient">Online Security</span>
+            </h1>
+            <p class="text-lg sm:text-xl opacity-90">
+                Top 10 essential actions to protect your digital life.
+            </p>
+        </div>
+    </header>
 
-  <div class="image-container">
-    <img src="/images/Ghost_SM.png" alt="Ghost" />
-  </div>
+    <!-- Main Content Section -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">Why Online Security Matters</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                In today's interconnected world, safeguarding your online presence is more critical than ever.
+                From personal data breaches to phishing scams, the threats are constant. By taking a few proactive
+                steps, you can significantly enhance your security posture and protect your privacy.
+            </p>
+        </section>
+
+        <!-- Security Image -->
+        <div class="mb-12 flex justify-center">
+            <img src="/images/flyd-9PivUW7l1m4-unsplash.jpg" alt="Online Security Graphic" class="rounded-lg shadow-lg max-w-full h-auto">
+        </div>
+
+        <!-- Security Tips Section -->
+        <section>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-gray-900">
+                Top 10 Essential Security Actions
+            </h2>
+            <div>
+                <!-- Tip 1: Use Strong, Unique Passwords -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">1. Use Strong, Unique Passwords</h3>
+                    <p class="text-gray-600">
+                        Never reuse passwords. Use a reputable password manager to generate and store complex, unique passwords
+                        for each of your accounts.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Why?</h3>
+                    <p class="text-gray-600">
+                        The reason having a unique password for every account is so important is simple: You have no way of knowing how
+                        securely your account information is being protected when it is stored by a third party. You may use a very strong
+                        password, but if you use it on all of your accounts, then if any vendor gets compromised, ALL of your accounts
+                        are compromised. Enormous lists of leaked credentials are available online for bad actors to utilize. Don't let
+                        the bad security practices of the gossip forum you joined in 2003 be the reason your bank account gets drained today.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Good passwords are hard to guess and not used anywhere else. The best passwords are long, random text
+                        strings containing upper- and lower-case letters, numbers, and special characters. More than just being
+                        hard to guess, these long, random, complex passwords also take a long time to brute force, and bad actors
+                        attempting to do so are more likely to be detected in the process. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        As humans, we are not good at remembering
+                        large quantities of random passwords. Since you should be using a unique password for every account, managing
+                        this yourself will get cumbersome very quickly. Use a password manager. They're worth every penny you might
+                        spend on them, and if you're a bit more techy, you can host your own for free.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Which one should I choose?</h3>
+                    <p class="text-gray-600">
+                        A good password manager stores only encrypted data, has abundant security mechanisms available to secure your personal
+                        information, and offers browser extensions and mobile apps that you can use to fill login credentials automatically as
+                        you need them. The more convenient it is to use, the more likely you are to use it. Because it allows access to ALL
+                        of your accounts, it is especially important that you secure it well. Enable multi-factor authentication at the very
+                        least. More on that to come.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        I like Bitwarden, personally, but there are many options available to choose from, including some from vendors you
+                        may already use.
+                    </p>
+                    <ul class="list-disc pl-5 mt-3 space-y-2">
+                        <li>
+                            <strong>Bitwarden:</strong><br>
+                            A great open-source and free or affordable option, Bitwarden provides end-to-end encryption and a secure vault for
+                            storing sensitive information. It also offers browser extensions and mobile apps.
+                        </li>
+                        <li>
+                            <strong>1Password:</strong><br>
+                            Known for its strong security and user-friendly interface, 1Password is a popular choice for individuals and
+                            businesses. It offers a wide range of features and robust security measures, including 2FA and local encryption.
+                        </li>
+                        <li>
+                            <strong>Dashlane:</strong><br>
+                            Dashlane is known for its comprehensive feature set, including a VPN, password health checker, and dark web
+                            monitoring, in addition to strong security features like 2FA and 256-bit AES encryption.
+                        </li>
+                        <li>
+                            <strong>Keeper:</strong><br>
+                            Keeper is lauded for its user-friendly interface and robust security features, including 2FA and a zero-knowledge
+                            security model where encryption and decryption happen on the user's device.
+                        </li>
+                        <li>
+                            <strong>NordPass:</strong><br>
+                            This option is recognized for its strong encryption, user-friendly interface, and cross-platform capabilities.
+                        </li>
+                        <li>
+                            <strong style="text-decoration: line-through;">LastPass</strong>:<br>
+                            I mention LastPass here mostly to preemptively answer the question, "What about LastPass?" LastPass employs the
+                            features I mention above, but according to online sources, has a poor security track record, including but not
+                            limited to, a history of data breaches, unencrypted data exposure, questionable transparency, third-party audit
+                            concerns, and reports of crypto currency theft due to cracked user vaults exposing users' private keys.
+                        </li>
+                    </ul>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Are there any alternatives?</h3>
+                    <p class="text-gray-600">
+                        If you're not using a password manager, passphrases offer better security than passwords and are still easy to
+                        remember. While I wouldn't recommend using this one, "My password is P@ssword One Two Three!" is significantly
+                        more secure than "P@ssword123" but is just as easy to remember.
+                    </p>
+                </div>
+
+                <!-- Tip 2: Enable Two-Factor Authentication (2FA) -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">2. Enable Two-Factor Authentication (2FA)</h3>
+                    <p class="text-gray-600">
+                        Also called <strong>Multi-Factor Authentication (MFA)</strong>, especially if more than two pieces of evidence are required to log in.
+                        This provides an extra layer of security to your accounts. Even if your password is stolen, 2FA/MFA makes unauthorized access 
+                        significantly harder.  This is because in addition to your password, bad actors need something you have (a security
+                        token, your phone, or a hardware key) or are (such as biometric data like your fingerprint or facial recognition). While
+                        usually not required, most online services offer multi-factor authentication if you dig into your profile settings.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Example:</h3>
+                    <p class="text-gray-600">
+                        Any time you've entered your username and password into a website and were then prompted for a code that was emailed or sent
+                        to your registered phone number via SMS, you were using multi-factor authentication. <br>First, you provided something you knew: the
+                        username and password required to log in. <br>Second, you provided something you have: in this case access to your phone or email.
+                        <br>Once both pieces of evidence were confirmed, you gained access to the service using your account. If a bad actor had the
+                        password to your bank account, they wouldn't be able to log into without also having access to your email. If you're using
+                        the same or a similar password for both accounts, however, then they may have access to both and can circumvent your added
+                        security. Do not reuse passwords.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">What are my options?</h3>
+                    <p class="text-gray-600">
+                        You have several different options, but they are not all created equal. At a high level, there are four types of MFA:
+                    </p>
+                    <ul class="list-disc pl-5 mt-3 space-y-2">
+                        <li>
+                            <strong>Knowledge-based authentication:</strong> This type of MFA relies on something you know, such as a password, PIN, or the answer to a security question.
+                        </li>
+                        <li>
+                            <strong>Possession-based authentication:</strong> This factor involves something you have, like a smartphone, physical security key, or smart card.
+                        </li>
+                        <li>
+                            <strong>Inherence-based authentication:</strong> Also known as biometric authentication, this type uses something you are, such as your fingerprint, facial recognition, or iris scan.
+                        </li>
+                        <li>
+                            <strong>Location-based authentication:</strong> This type of MFA considers the user's physical location when granting access. For example, an employee might only be allowed to access certain resources when connected to the company's secure Wi-Fi network.
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 mt-3">
+                        With that said, possession-based authentication is often the most secure. SMS and email are the least secure.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        SMS - text messages - are not considered secure as your carrier SIM card can be spoofed or cloned without ever needed access to your or your hardware.
+                        Email is also considered insecure, due both to insufficient encryption and the fact that for most people, it's hosted by a third-party service.
+                        It doesn't help that the email account may also be compromised with the same credentials as from the account using MFA. Do not reuse passwords.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        If possible, use hardware tokens for MFA, such as a <strong>YubiKey</strong> or the <strong>Google Titan Security Key</strong>. These are things you have to purchase, once, and you should probably
+                        purchase a spare. Sites and services that allow you to register hardware tokens generally let you register multiple. This means you can keep one on your keychain
+                        so it's always with you, and another located in a safe place as a backup in case something happens to the primary one. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        For convenience, you may wish to select hardware that allows for multiple means of connection, like USB-C for your laptop and NFC for your phone or tablet (though 
+                        admittedly USB-C would probably work there, too.)
+                        Unfortunately, there is a reason "sites and services that allow you to register hardware tokens" was specified. Many of the services that should be secured most,
+                        such as banking, health, and government institutions, are the least likely to allow users to utilize hardware tokens. These services are likely to have email and
+                        SMS MFA options alone, if at all.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        The second most preferred, but far more widely available MFA option is a <strong>time-based one time password (OTP) authenticator app</strong>. The name sounds complicated, but
+                        many options exist and registering usually just involves scanning a QR code with your phone camera from within the app and supplying the resulting (often six digit)
+                        code to finalize the setup. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Once implemented, you will be prompted for a code from the authenticator application each time you log in, so you will need your phone
+                        accessible to log into a site or service, even if you know your password. Most authentication apps allow the registered OTP site configuration to be exported or 
+                        backed up online in case of lost or damaged hardware.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                    <strong>Some options include:</strong>
+                    <ul class="list-disc pl-5 mt-3 space-y-2">
+                        <li>AuthO</li>
+                        <li>Duo Mobile</li>
+                        <li>Google Authenticator</li>
+                        <li>Okta</li>
+                    </ul>
+                        If no other options exist, a basic 2FA system utilizing email or SMS is still better than no MFA on the account at all.
+                    </p>
+                </div>
+
+                <!-- Tip 3: Be Wary of Phishing Scams -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">3. Be Wary of Phishing Scams</h3>
+                    <p class="text-gray-600">
+                        Always double-check the sender of emails and messages. Avoid clicking suspicious links or downloading attachments from unknown sources.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">No 💩 Sherlock, but I wouldn't have clicked it if I knew it were a scam. What should I look for?</h3>
+                    <p class="text-gray-600">
+                        Fair. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        First, phishing scams are common in email, but may also occur via phone or text message, so you'll have to practice vigilance on all of your devices.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Second, don't just look at the sender of an email and assume it's real. Expand the sender details to the extent possible on your device or service.
+                        Usually, there is a toggle you can use to see more information, like the actual email address of the sender, rather than the name they chose to use for their
+                        outgoing mail, as well as other information like the service that sent it. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        For example, you may get an email from "Chase Bank Fraud Department" with an email
+                        address of "wife243@gmail.com" when you drill into the extra information. The email itself may look convincing, and you may need to look closely at the email
+                        address, even when expanding the details. Some clever attackers will register domains that look similar to the ones they're mimicking in an attempt to fool you.
+                        Don't click any links from goog1e.com, paypa1.com, or faceb00k.com, for example.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Third, any communication you get that requires immediate action, invokes a sense of urgency or fear, or comes from an unexpected source should immediately
+                        arouse your suspicion. The goal with these communications is to get you to act without thinking things over. Do not click or follow links without verifying them first.
+                        Usually, you can hover over a link to see the URL it points to, or you can right-click and copy the link address, or long click if on a mobile device, and then
+                        paste the link into a text editor to see where it would have taken you. If someone claiming to be your cousin emails you saying they're in another country and
+                        urgently need money to get back, call them using the contact information you already have to verify. If you get an email saying your account will be closed unless
+                        you take action, go to the actual company site and see if they mention anything out of the ordinary.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Fourth, don't open attachments from unknown senders, or if any of the factors above are present. Malicious attachments are often designed to be intriguing. Don't open the
+                        "invoice," "court summons," or "evidence," no matter how much you want to prove your innocence or see what someone else is in trouble for or has purchased.
+                    </p>
+                </div>
+
+                <!-- Tip 4: Keep Software Updated -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">4. Keep Software Updated and Security Settings Enabled</h3>
+                    <p class="text-gray-600">
+                        Regularly update your operating system, web browser, antivirus software, and all applications to patch security vulnerabilities.
+                        If you have smart devices in your home (more on that later), be sure to log into their dedicated apps in order to check for and apply firmware updates.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Modern operating systems generally have security options available, but security is always at the cost of convenience and/or performance.
+                        Be sure your antivirus software, be it native or third party, is updated daily and enabled. Do not disable features if creating exclusions is an option.
+                        If you do need to disable a feature, do so temporarily. Set a reminder for yourself if there is a chance you'll forget to re-enable your security software,
+                        assuming it doesn't re-enable automatically.
+                    </p>
+                </div>
+
+                <!-- Tip 5: Use a VPN on Public Wi-Fi -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">5. Use a VPN on Public Wi-Fi</h3>
+                    <p class="text-gray-600">
+                        Encrypt your internet connection when using public Wi-Fi networks to protect your data from eavesdropping.
+                        If you travel frequently, it might be worth investing in a travel router. These can be used to connect to public or hotel wifi or wired connections
+                        and supply a different, secured network to which your devices can connect. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        This is also helpful in cases where your connection requires accessing
+                        or authenticating to a captive portal, as is common for public or hotel included wifi. Travel routers allow you to authenticate once using a connected device with a screen,
+                        then all of your other connected devices can connect without issue.
+                    </p>
+                </div>
+
+                <!-- Tip 6: Backup Your Data Regularly -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">6. Backup Your Data Regularly</h3>
+                    <p class="text-gray-600">
+                        Store important files on external drives or cloud services. This protects you against data loss due to cyberattacks, hardware failure, or accidents.
+                        Back up data routinely, on different mediums, and in separate locations. It doesn't matter that you backed up to both your network attached storage and
+                        an external hard drive if they're both in the same burning house. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        If your storage solutions offer the option, restrict artifact deletion for a period of time,
+                        starting at one week. This will temporarily use more storage, but prevents files from being overridden or deleted in ransomware or other malicious attacks.
+                        If all of your data is encrypted or deleted by a bad actor, it doesn't matter if it was stored and accessible elsewhere. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Additionally, ensure your online data
+                        is encrypted locally before being uploaded to the storage provider, so if the service is ever compromised, attackers can't access your files. If you want to
+                        backup your data online, but also don't expect to download said data very often, search for "cold storage" options among the typical vendors as this can save
+                        you a significant amount of money, especially over time, which is the whole goal.
+                    </p>
+                </div>
+
+                <!-- Tip 7: Review Privacy Settings -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">7. Review Privacy Settings</h3>
+                    <p class="text-gray-600">
+                        Periodically check and adjust privacy settings on social media, apps, and online services to control who sees your personal information.
+                        If you especially trust a company and want to supply telemetry data, go for it. The company will appreciate it, although not enough to compensate you for it.
+                        Otherwise, whenever possible disable public access to your account, or your private information at least, wherever possible. These settings might be updated
+                        over time and warrant annual review. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Also take the time to select "necessary only" when presented with cookie settings online. Companies generally do not
+                        need to store advertising and tracking data on your system for their sites to work, hence why those other categories are all unnecessary.
+                    </p>
+                </div>
+
+                <!-- Tip 8: Secure Your Home Network -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">8. Secure Your Home Network</h3>
+                    <p class="text-gray-600">
+                        Change default router passwords, enable WPA3/WPA2 encryption, and consider creating guest and/or internet of things (IoT) networks.
+                        Take this a step further by also changing the default password for all the smart devices in your home connecting over wifi.
+                        IoT devices represent another attack surface as they regularly call home and could be conscripted by bad actors if vulnerabilities are left unpatched.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Some of these devices may not be supported by the original vendor anymore and will never receive the security updates needed to keep them secure.
+                        Having them on a separate wifi network limits the risk they pose while allowing them to provide the functionality they promised.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Whenever possible, change the administrator username used to log onto your devices. "Admin" and "root" are common defaults, and if they can be disabled and
+                        a replacement used, then attackers won't even know the username to use, much less the password.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Lastly, and this is slightly more technical, but don't use the default DNS settings you get from your Internet Service Provider (ISP).  The Domain Name System, DNS, 
+                        translates human-readable website names into IP addresses to which your browser can connect.  "Google.com" is much easier to remember than "142.250.115.139."  
+                        Most people will use the DNS settings automatically provided by their ISP, but this means your ISP knows every website to which you navigate, and 
+                        often compile and sell this information.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Okay, what should I use instead?</h3>
+                    <p class="text-gray-600">
+                        There are a number of alternative public domain servers you can use, the most common being hosted by Google and Cloudflare.  You can set this in your router settings, 
+                        assuming you know how to log into it and are comfortable changing network settings.
+                    <p class="text-gray-600 mt-3">
+                        <strong>Public DNS servers:</strong>
+                        <ul class="list-disc pl-5 mt-3 space-y-2">
+                            <li>Cloudflare DNS: 1.1.1.1 and 1.0.0.1</li>
+                            <li>Google DNS: 8.8.8.8 and 8.8.4.4</li>
+                            <li>OpenDNS: 208.67.222.222 and 208.67.220.220</li>
+                            <li>Quad9: 9.9.9.9</li>
+                        </ul>
+                        Any of these will work, and some even support encrypted DNS, so no one snooping can see what site's you're requesting.  You can set this at your router, so everyone 
+                        connected to your network benefits, but you can also configure DNS on your individual device so your DNS preference is honored even when you travel.   You may also 
+                        see some performance improvements, especially on public networks like in hotels or coffee shop wifi.  If you are already connecting to a VPN on public networks, it 
+                        already encrypts all your traffic, including DNS requests, so you don't need to do both in that scenario.  To take it all a step further, you can stand up your own 
+                        DNS server using low power hardware like a Raspberry Pi and software like PiHole or AdGuard.  It's out of scope for this resource, but these can help you filter ads, 
+                        block inappropriate sites, and generally help safeguard you from various browser based threats online.
+                    </p>
+                </div>
+
+                <!-- Tip 9: Limit Information Sharing Online -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">9. Limit Information Sharing Online</h3>
+                    <p class="text-gray-600">
+                        Think twice before sharing sensitive personal information on websites or social media, as it can be used for identity theft or targeted attacks.
+                        Additionally, if you are traveling, wait until you get back to post about it online. If you post about that 10 day cruise in advance, anyone browsing
+                        social media would know that your home will likely be unoccupied for that entire time and may act accordingly.
+                    </p>
+                </div>
+
+                <!-- Tip 10: Monitor Your Accounts -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">10. Monitor Your Accounts</h3>
+                    <p class="text-gray-600">
+                        Regularly check bank statements, credit reports, and online account activity for any unusual or unauthorized transactions.
+                        This sounds simple enough, but can be expanded upon for extra security. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        You likely already know that there are three major credit bureaus in the United States,
+                        and you probably know that they will give you a free credit report annually. Instead of getting them all at once, set a repeating calendar reminder to generate
+                        a report from one bureau every four months, that way you don't have to wait as long between queries or pay for additional reports. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        It's also potentially wise
+                        to place a credit freeze on yourself if you are not making any major purchases, changing living arrangements, or signing up for a new utility service. It's free
+                        to place and lift freezes, and you can do either temporarily or permanently.
+                    </p>
+                </div>
+
+                <!-- Bonus Tip -->
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-indigo-700">Bonus Tip: Enhance Email Security with Plus Addressing</h3>
+                    <p class="text-gray-600">
+                        Since you're now using a password manager (right!?), you don't have to remember usernames, either.
+                        This means you can implement another layer of security with something called plus addressing,
+                        or subaddressing, available from most email providers.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        An option you may not know you have is to add a plus sign (+) and a tag in your email address,
+                        just to the left of the @ symbol. For example, if you are signing up for Bob's newsletter,
+                        and your email address is "username@example.com," you can often choose to sign up using
+                        "username+bobsnews@example.com" and the email will still be delivered to you like normal.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4 mb-2 text-gray-800">Okay, weird, but so what?</h3>
+                    <p class="text-gray-600">
+                        Plus addressing is useful in a number of ways. 
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        First, if you sign up for something and later start getting noticeably more spam email,
+                        you can check the email address they're sending it to in order to potentially see who leaked (sold) it.
+                        If you're getting spam sent to username+bobsnews@example.com, then you'll know it was Bob's newsletter that either
+                        sold your information or was potentially compromised themselves.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Second, it helps for creating filters and rules in your email. Maybe you want to send all emails sent to
+                        username+newsletters@example.com to a specific folder in your inbox so you don't get phone notifications.
+                        Or maybe, Bob really did leak your email and you want to sent all email to "username+bobsnews@example.com"
+                        directly to the trash.
+                    </p>
+                    <p class="text-gray-600 mt-3">
+                        Lastly, since we're talking security here, bad actors are buying credentials in bulk and running their scams largely
+                        with automation. If the username and password are both unique, then it certainly won't work with the bad actor tries
+                        to log in to your bank's website using the "username+bobsnews@example.com" username. If someone is targeting you specifically,
+                        they'll likely catch on to the subaddressing, but most bad actors are just going after the low-hanging fruit.  It's also worth 
+                        noting that not all online services allow the plus symbol in the email address field during registration, and will block 
+                        it with input validation.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action / Further Resources -->
+        <section class="mt-12 text-center card bg-blue-500 text-white">
+            <h2 class="text-2xl font-bold mb-4">Stay Safe, Stay Informed!</h2>
+            <p class="text-lg mb-6">
+                Online security is an ongoing process. Continuously educate yourself on new threats and best practices.
+            </p>
+            <a href="#" class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                Learn More
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 py-8 px-4 sm:px-6 lg:px-8 text-white text-center rounded-t-3xl mt-12">
+        <p>&copy; <span id="currentYear"></span> Hilbert Solutions. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamically set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ghosted</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2em;
+    }
+
+    .image-container {
+      max-width: 400px;
+      /* The transform on hover is currently on the container, which is fine.
+         We'll add the fade effect to the img itself. */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      /* Add these two lines for the fade effect */
+      opacity: 1; /* Initial state: fully visible */
+      transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+    }
+
+    /* New CSS for the fade effect on hover */
+    img:hover {
+      opacity: 0.1; /* When hovered, fade to 10% visible (you can adjust this value) */
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <p></p>
+
+  <div class="image-container">
+    <img src="/images/Ghost_SM.png" alt="Ghost" />
+  </div>
+</body>
+</html>
