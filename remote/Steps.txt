@@ -1,0 +1,16 @@
+How to install RustDesk to receive remote assistance
+
+01. Download RustDesk. bin/rustdesk-1.4.5-x86_64.msi
+02. Access the directory to which rustdesk-1.4.5-x86_64.msi was downloaded, right-click rustdesk-1.4.5-x86_64.msi, and open Properties
+03. Select Unblock and click OK
+04. Run rustdesk-1.4.5-x86_64.msi
+05. Click Next
+06. Accept the EULA and click Next
+07. Uncheck "Create desktop icon" and "Install RustDesk Printer" and click Next
+08. Click Install
+09. Click Finish
+10. RustDesk should start automatically.  Verify the Ready status at the bottom.  It should mention setting up your own server.  Click the three dots button in the top right of the ID field to open settings
+11. In Settings, click Network > Unlock network settings > ID/Relay server
+12. Input "remote.hilbert.solutions" for the ID server and click OK
+13. Click the X on the right side of the Settings tab at the top
+14. Verify that the status is Ready (without the rest of the text from earlier) and provide me the ID number.

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Remote Assistance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 2em;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1em;
+    }
+
+    .slideshow-container {
+      position: relative;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2em;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    .step-number {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #0078D4;
+      margin-bottom: 0.5em;
+    }
+
+    .step-instruction {
+      font-size: 1.2rem;
+      margin-bottom: 1em;
+    }
+
+    .step-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: #0078D4;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-button:hover {
+      background-color: #005a9e;
+    }
+    
+    .nav-button {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -30px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .nav-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <h1>How to Install RustDesk for Remote Assistance</h1>
+
+  <div class="slideshow-container">
+    <div class="slide active">
+      <div class="step-number">Step 1</div>
+      <div class="step-instruction">Download RustDesk by clicking the button below.</div>
+      <a href="bin/rustdesk-1.4.5-x86_64.msi" class="download-button">Download RustDesk</a>
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 2 & 3</div>
+      <div class="step-instruction">
+        Go to the folder where you downloaded the file, right-click on "rustdesk-1.4.5-x86_64.msi", and select "Properties". 
+        In the Properties window, check the "Unblock" box and click "OK".
+      </div>
+      <img src="images/Step_02_03.png" alt="Unblock RustDesk installer" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 5</div>
+      <div class="step-instruction">
+          Run the installer and click "Next".
+      </div>
+      <img src="images/Step_05.png" alt="Installer Welcome" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 6</div>
+      <div class="step-instruction">
+          Accept the EULA and click "Next".
+      </div>
+      <img src="images/Step_06.png" alt="Installer EULA" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 7</div>
+      <div class="step-instruction">
+          Uncheck "Create desktop icon" and "Install RustDesk Printer" and click "Next".
+      </div>
+      <img src="images/Step_07.png" alt="Installer Options" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 8</div>
+      <div class="step-instruction">
+          Click "Install".
+      </div>
+      <img src="images/Step_08.png" alt="Installer Progress" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 9</div>
+      <div class="step-instruction">
+          Click "Finish".
+      </div>
+      <img src="images/Step_09.png" alt="Installer Finish" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 10</div>
+      <div class="step-instruction">
+        RustDesk should start automatically. Verify the "Ready" status at the bottom. Click the three dots button in the top right of the ID field to open settings.
+      </div>
+      <img src="images/Step_10.png" alt="RustDesk Main Window" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 11</div>
+      <div class="step-instruction">
+        In Settings, click "Network" > "Unlock network settings" > "ID/Relay server".
+      </div>
+      <img src="images/Step_11.png" alt="RustDesk Settings" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 12</div>
+      <div class="step-instruction">
+        Input "remote.hilbert.solutions" for the ID server and click "OK".
+      </div>
+      <img src="images/Step_12.png" alt="RustDesk Network Settings" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 13</div>
+      <div class="step-instruction">
+        Click the "X" on the right side of the Settings tab at the top.
+      </div>
+      <img src="images/Step_13.png" alt="Close Settings" class="step-image">
+    </div>
+
+    <div class="slide">
+      <div class="step-number">Step 14</div>
+      <div class="step-instruction">
+        Verify that the status is "Ready" (without the rest of the text from earlier) and provide me the ID number.
+      </div>
+      <img src="images/Step_14.png" alt="Ready Status" class="step-image">
+    </div>
+
+    <a class="prev nav-button" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next nav-button" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "flex";  
+    }
+  </script>
+
+</body>
+</html>
